@@ -1,4 +1,4 @@
-function load({inputData,gridData,searchData,accesKey}){
+function load({inputData,gridData,searchData,accesKey,imgCount}){
     const input = document.querySelector(inputData);
     const grid = document.querySelector(gridData);
     const searchBtn = document.querySelector(searchData);
@@ -11,7 +11,7 @@ function load({inputData,gridData,searchData,accesKey}){
     function loadImg(){
         removeImages();
         const url = 'https://api.unsplash.com/search/photos/?query='+input.value+
-        '&per_page=9&client_id='+accesKey;
+        '&per_page='+imgCount+'&client_id='+accesKey;
         fetch(url)
         .then(response=>{
             if(response.ok){
