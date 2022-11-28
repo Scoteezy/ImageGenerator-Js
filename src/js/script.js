@@ -5,5 +5,7 @@ window.addEventListener('DOMContentLoaded',()=>{
         inputData:'#input',
         gridData:'.grid', 
         searchData:"#search",
-        accesKey:'8d-xBcwWl0Pkze8PAKvsEkk1Qg_iQcFsZOPCllxkS9Q'});
+        accesKey:'8d-xBcwWl0Pkze8PAKvsEkk1Qg_iQcFsZOPCllxkS9Q',
+        imgCount:9
+    });
 });
